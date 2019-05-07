@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Server } from 'src/app/shared/server';
+import { SAMPLE_SERVERS } from '../../shared/SAMPLE_SERVERS';
 
 @Component({
   selector: 'app-section-health',
@@ -8,6 +10,8 @@ import { Component, OnInit } from '@angular/core';
 export class SectionHealthComponent implements OnInit {
 
   constructor() { }
+
+  servers: Server[] = SAMPLE_SERVERS;
 
   ngOnInit() {
   }
